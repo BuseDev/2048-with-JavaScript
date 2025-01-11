@@ -1,0 +1,75 @@
+body{
+    background-color: #faf8ef;
+    display: flex; /*flexbox özelliği etkin, öğeleri hizalamak için kullanılır.*/
+    /*display özelliği flex, block, inline veya grid olabilir. Yalnız başına kullanılabilir*/
+    justify-content: center; /*flexbox içindeki elementleri yaty olarak ortalar*/
+    /*justify-content tek başına kullanılamak display özelliği ile birlikte kullanılmalıdır aksi takdirde etkisiz olur*/
+    font-family: "Clear Sans", Helvetica, serif;
+}
+
+h1{
+    font-size: 80px;
+    line-height: 0.7; /*Satır yüksekliği yazı boyutunun %70 i olarak ayarlandı*/
+    color: #776E65;
+    margin: 0;
+}
+
+p, h2{
+    margin: 0;
+}
+
+.container{
+    width: 468px;
+    margin-top: 30px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between; /*öğeler yan yana ve iki öğe olduğu için bir sola yaslı diğeri sağa yaslı konumda*/
+    margin-bottom: 20px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap; /***grid div ler grid içinde satır ve sütunlara hizalandı****/
+    width: 456px;
+    height: 456px;
+    background-color: #BBADA0;
+    border: 7px solid #BBADA0;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+/*display: flex; ve flex-wrap: wrap; birlikte kullanıldığında,
+ bir konteynerin içindeki öğelerin Flexbox düzeninde 
+ yerleştirilmesini ve gerektiğinde birden fazla satır 
+ (veya sütun) oluşturulmasını sağlar.*/
+
+.grid div{
+    width: 100px;
+    height: 100px;
+    margin: 7px;
+    border-radius: 3px;
+    background-color: #EEE4DA;
+    color: #AFA192;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    line-height: 1.6;
+}
+
+.score-board{
+    text-align: center;
+    width: 70px;
+    height: 60px;
+    border-radius: 3px;
+    background-color: #8f7a66;
+    color: #FFF;
+}
+
+#score{
+    font-size: 30px;
+}
+
+.score-title{
+    font-size: 16px;
+}
